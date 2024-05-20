@@ -47,8 +47,8 @@ register_activation_hook( __FILE__, 'book_list_plugin_activate' );
  *
  * phpcs:disable Squiz.PHP.CommentedOutCode.Found, Squiz.Commenting.InlineComment.InvalidEndChar
  */
-require_once plugin_dir_path( __FILE__ ) . 'includes/api-endpoints.php';
-// require_once plugin_dir_path( __FILE__ ) . 'includes/class-book-list-controller.php';
+// require_once plugin_dir_path( __FILE__ ) . 'includes/api-endpoints.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-book-list-controller.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/helper-functions.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes.php';
 // phpcs:enable

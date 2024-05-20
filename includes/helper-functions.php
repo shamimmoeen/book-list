@@ -152,7 +152,7 @@ function book_list_add_book( $book_name, $author_name ) {
  *
  * @return bool True if the user has permission, false otherwise.
  */
-function book_list_creat_book_permission_check() {
+function book_list_create_book_permission_check() {
 	return current_user_can( 'publish_posts' );
 }
 

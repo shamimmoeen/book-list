@@ -221,7 +221,7 @@ class Book_List_Controller extends WP_REST_Controller {
 	 * @return bool True if the request has access to create items, false otherwise.
 	 */
 	public function create_item_permissions_check( $request ) {
-		return book_list_creat_book_permission_check();
+		return book_list_create_book_permission_check();
 	}
 
 	/**

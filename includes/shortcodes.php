@@ -11,7 +11,7 @@
  * @return string HTML content of the form.
  */
 function book_list_form_shortcode() {
-	if ( ! book_list_creat_book_permission_check() ) {
+	if ( ! book_list_create_book_permission_check() ) {
 		return esc_html__( 'You do not have permission to add book.', 'book-list' );
 	}
 
@@ -51,7 +51,7 @@ function book_list_handle_form_submission() {
 			wp_die( esc_html__( 'Invalid nonce.', 'book-list' ) );
 		}
 
-		if ( ! book_list_creat_book_permission_check() ) {
+		if ( ! book_list_create_book_permission_check() ) {
 			wp_die( esc_html__( 'Permission denied.', 'book-list' ) );
 		}
 
